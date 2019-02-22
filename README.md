@@ -1,2 +1,2 @@
 # CardRadius
-![CardRadius](../CardRadius/CardRadius.png)
+![c](https://raw.githubusercontent.com/princeSmall/CardRadius/master/CardRadius.png)
