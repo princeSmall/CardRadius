@@ -13,6 +13,9 @@
 		1C37B096221FDFA700481AB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C37B095221FDFA700481AB4 /* Assets.xcassets */; };
 		1C37B099221FDFA700481AB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C37B097221FDFA700481AB4 /* LaunchScreen.storyboard */; };
 		1C37B09C221FDFA700481AB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C37B09B221FDFA700481AB4 /* main.m */; };
+		1C37B0A7221FDFF400481AB4 /* UITableViewCell+CardRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C37B0A6221FDFF400481AB4 /* UITableViewCell+CardRadius.m */; };
+		1C37B0AD221FE3C800481AB4 /* CardRadiusTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C37B0AC221FE3C800481AB4 /* CardRadiusTableViewCell.m */; };
+		5D372F376286437BB23974AB /* libPods-CardRadius.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C13437D64A827E9512482F /* libPods-CardRadius.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,13 @@
 		1C37B098221FDFA700481AB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C37B09A221FDFA700481AB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C37B09B221FDFA700481AB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1C37B0A5221FDFF400481AB4 /* UITableViewCell+CardRadius.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+CardRadius.h"; sourceTree = "<group>"; };
+		1C37B0A6221FDFF400481AB4 /* UITableViewCell+CardRadius.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+CardRadius.m"; sourceTree = "<group>"; };
+		1C37B0AB221FE3C800481AB4 /* CardRadiusTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardRadiusTableViewCell.h; sourceTree = "<group>"; };
+		1C37B0AC221FE3C800481AB4 /* CardRadiusTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardRadiusTableViewCell.m; sourceTree = "<group>"; };
+		A1C13437D64A827E9512482F /* libPods-CardRadius.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CardRadius.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E984E615DA33539C0AB99305 /* Pods-CardRadius.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardRadius.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardRadius/Pods-CardRadius.debug.xcconfig"; sourceTree = "<group>"; };
+		F2322B9305FF9E0D9BBB0A22 /* Pods-CardRadius.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardRadius.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardRadius/Pods-CardRadius.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D372F376286437BB23974AB /* libPods-CardRadius.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +55,8 @@
 			children = (
 				1C37B08B221FDFA600481AB4 /* CardRadius */,
 				1C37B08A221FDFA600481AB4 /* Products */,
+				B126EE89378121F9587465DE /* Pods */,
+				715402D44BA551B877993CED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +75,10 @@
 				1C37B08D221FDFA600481AB4 /* AppDelegate.m */,
 				1C37B08F221FDFA600481AB4 /* ViewController.h */,
 				1C37B090221FDFA600481AB4 /* ViewController.m */,
+				1C37B0AB221FE3C800481AB4 /* CardRadiusTableViewCell.h */,
+				1C37B0AC221FE3C800481AB4 /* CardRadiusTableViewCell.m */,
+				1C37B0A5221FDFF400481AB4 /* UITableViewCell+CardRadius.h */,
+				1C37B0A6221FDFF400481AB4 /* UITableViewCell+CardRadius.m */,
 				1C37B092221FDFA600481AB4 /* Main.storyboard */,
 				1C37B095221FDFA700481AB4 /* Assets.xcassets */,
 				1C37B097221FDFA700481AB4 /* LaunchScreen.storyboard */,
@@ -71,6 +88,23 @@
 			path = CardRadius;
 			sourceTree = "<group>";
 		};
+		715402D44BA551B877993CED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1C13437D64A827E9512482F /* libPods-CardRadius.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B126EE89378121F9587465DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E984E615DA33539C0AB99305 /* Pods-CardRadius.debug.xcconfig */,
+				F2322B9305FF9E0D9BBB0A22 /* Pods-CardRadius.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +112,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C37B09F221FDFA700481AB4 /* Build configuration list for PBXNativeTarget "CardRadius" */;
 			buildPhases = (
+				13860A266ACB3ADD44F72F21 /* [CP] Check Pods Manifest.lock */,
 				1C37B085221FDFA600481AB4 /* Sources */,
 				1C37B086221FDFA600481AB4 /* Frameworks */,
 				1C37B087221FDFA600481AB4 /* Resources */,
@@ -136,13 +171,36 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		13860A266ACB3ADD44F72F21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CardRadius-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1C37B085221FDFA600481AB4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1C37B091221FDFA600481AB4 /* ViewController.m in Sources */,
+				1C37B0A7221FDFF400481AB4 /* UITableViewCell+CardRadius.m in Sources */,
 				1C37B09C221FDFA700481AB4 /* main.m in Sources */,
+				1C37B0AD221FE3C800481AB4 /* CardRadiusTableViewCell.m in Sources */,
 				1C37B08E221FDFA600481AB4 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +341,7 @@
 		};
 		1C37B0A0221FDFA700481AB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E984E615DA33539C0AB99305 /* Pods-CardRadius.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +359,7 @@
 		};
 		1C37B0A1221FDFA700481AB4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2322B9305FF9E0D9BBB0A22 /* Pods-CardRadius.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
